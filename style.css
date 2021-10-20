@@ -1,0 +1,285 @@
+/* html { */
+    /* height: 100%; */
+/*  */
+/* } */
+
+body {
+    background-image: linear-gradient(to top right, #48c6ef, #6f86d6);
+    /*background-image: linear-gradient(to bottom right, #f2f77a, #036bf8);*/
+    /*Assistir Aula 29 para referências sobre cores e design para sites futuros - */
+    font-family: 'Roboto', sans-serif;
+    /*Fonte do Google Fonts*/
+    color: white;
+    font-size: 0.90rem;
+}
+
+.titulo_site {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    /*Fonte do Google Fonts*/
+    margin-bottom: 1rem;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.521);
+    
+}
+
+p {
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+    /*Medidas diferentes da vídeo-aula. Por algum motivo os textos ficam menores aqui*/
+
+}
+
+.textohome {
+    font-size: 1.1rem;
+}
+
+
+.container {
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex; /* flex invocado: deixa os elementos lado a lado dentro do espaço do header */
+    justify-content: space-between;
+    align-items: center; /* centraliza verticalmente */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*border-bottom: 1px solid; para fazer a linha divisória de outra maneira*/
+
+}
+
+#linha {
+    border: 1px white solid;
+    height: 0px;
+}
+
+main {
+    min-height: 300px;
+    display: flex; /* flexbox invocado */
+    align-items: center; /* alinha os intens dentro do main com o flexbox invocado */
+    margin-bottom: 50px;
+    
+}
+
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+
+.herobox1 {
+    width: 50%;
+    flex: 2; /* Comando que deixa essa caixa duas vezes maior que a caixa abaixo. Só é ativado com o display: flex sendo invocado no CSS do main */
+    padding-right: 100px;
+    margin-top: -0px;
+}
+
+.herobox2 {
+    width: 50%;
+    flex: 1; /* Comando que deixa essa caixa duas vezes menor que a caixa acima, uma vez que a herobox1 está com o flex: 2 e, a herobox2, flex: 1. Só é ativado com o display: flex sendo invocado no CSS do main */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.botao {
+    background-color: white;
+    color: #1f4ae7; 
+    padding: 11px 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.445);
+
+}
+
+.botao:hover {
+    background-color: #1f4ae7;
+    color: white;
+    transition-duration: 1s;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.nav_botao {
+    border: white 1px solid;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 25px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+
+.nav_botao:hover {
+    transition-duration:1s;
+
+}
+
+.nav_botao:hover .dropdown {
+    display: block;
+
+}
+
+.dropdown .nav_botao {
+    width: 90px;
+    background-color: #1f4ae7;
+    
+}
+
+
+a.botao {
+    display: inline-block; /*Transforma o elemento referenciado em uma linha de bloco*/
+    
+
+}
+
+.cards {
+    display: flex; /* flexbox invocado */
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.card1 {
+    background-image: url(imagens/img-02.png);
+    background-size: cover;
+    background-position:top; /*Na vídeo aula, o professor utilizou o parâmetro bottom. Mas somente com o top o resultado ficou próximo ao dele. Registrada a curiosidade*/
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.788);
+
+}
+
+.card2 {
+    background-image: url(imagens/img-03.png);
+    background-size: cover;
+    background-position:top; /*Na vídeo aula, o professor utilizou o parâmetro bottom. Mas somente com o top o resultado ficou próximo ao dele. Registrada a curiosidade*/
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.788);
+}
+
+.card3 {
+    background-image: url(imagens/img-04.png);
+    background-size: cover;
+    background-position:top; /*Na vídeo aula, o professor utilizou o parâmetro bottom. Mas somente com o top o resultado ficou próximo ao dele. Registrada a curiosidade*/
+    min-height: 250px;
+    width: 30%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.788);
+}
+
+.titulo_card {
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 25px;
+
+}
+
+.info {
+    font-size: 0.92rem;
+    line-height: 1.1rem;
+    /*Tamanhos também divergem em relação ao do professor*/
+    margin: 10px 30px 20px 30px; 
+
+}
+
+.imagem_card {
+    margin-top: 30px;
+
+}
+
+.testemunhos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px white solid;
+    box-sizing: border-box;
+    margin-top: 50px;
+
+}
+
+/*.tbox :last-child {
+    font-size: 0.6rem;
+    Note que há o espaço após o fim da classe e os dois pontos (:), que faz com que o código BUSQUE o elemento indicado depois dos dois pontos.
+
+}*/
+
+.tbox p:last-of-type {
+    /* Aqui, com o last of type, ele seleciona o ÚLTIMO ELEMENTO DO TIPO. Que tipo? No caso, elementos dentro da Tag <p>. Ou seja, como temois duas tags <p> em cada herobox, ele selecionou o último. CSS é magia pura. CSS-tricks.com/pseudo-class-selector/ */
+    font-size: 0.6rem;
+    padding-left: 30px;
+
+}
+
+.inputwrapper {
+    margin-bottom: 20px;
+
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.newline {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.margin-right-a {
+    margin-right: 10px;
+}
+
+input[type=radio] {
+    margin-right: 5px;
+}
+
+form {
+    margin: 40px 0px;
+}
+
+.botao2 {
+    background-color: white;
+    color: #1f4ae7; 
+    padding: 11px 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.445);
+
+}
+
+.botao2:hover {
+    background-color: #1f4ae7;
+    color: white;
+    transition-duration: 1s;
+
+}
